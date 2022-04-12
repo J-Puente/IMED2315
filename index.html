@@ -3,45 +3,70 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>J.Cruz</title>
-    <link rel = "stylesheet" type = "text/css" href = "styles\myStyles.css" />
+    <link rel = "stylesheet" type = "text/css" href = "styles\main.css" />
+    <link rel = "stylesheet" type = "text/css" href = "styles\partials\_colors.scss" />
+    <link rel = "stylesheet" type = "text/css" href = "styles\partials\_typography.scss" />
+    <link rel = "stylesheet" type = "text/css" href = "styles\partials\_typography.scss" />
+
 </head>
+<style>
+    body {
+        background-color: white;
+    }
+    h1 {
+        font-family: 'Marck Script', cursive;
+    }
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+    }
+    p {
+        font-family: 'Dosis', sans-serif;
+    }
+</style>
 <body>
     <header>
-        <div class="topnav"> 
-            <a class="active" href="#home"> <B><u>THE PLACE</u></B></a>
-                <a href="Welcome"><u>WELCOME</u></a>
-                <a href="Menu">MENU</a>
-                <a href="Reservations">RESERVATIONS</a>
-                <a href="News">NEWS</a>
-                <a href="Contact">CONTACT</a>
-        </div>
+        <section class="container">
+        <nav>
+            <ul>
+               <li><a class="active" href="/home">The Place</a></li>
+               <li><a href="Welcome"></a>Welcome</li>
+               <li><a href="Menu"></a>Menu</li>
+               <li><a href="Reservations"></a>Reservations</li>
+               <li><a href="News"></a>News</li>
+               <li><a href="Contact"></a>Contact</li>
+            </ul>
+        </nav>
+    </section>
     </header>
-    <br>
-    <br>
-    <br>
-    <br>
-    <body>
-        <div class="row"> <center>
-            <div class="column">
-            <h2 style="font-family: cursive; color: gold; font-size: 40px;">Discover</h2>
-            <h3 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 35px;"><B>OUR STORY</B></h3>
-           <img src="assets\Star.png" alt="star"/>
+<section class="container">
+    <div class="content">
+       <header>
+           <h1>Discover</h1>
+            <button class="buy-cta">Order Now!</button>
+        </header>
+    
+         <h2><B>OUR STORY</B></h3>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, ipsum impedit assumenda, distinctio atque repellat placeat et, quod saepe quisquam iure itaque earum dignissimos modi. Esse recusandae nulla neque explicabo!</p>
-            <a href="About Us">About Us</a></center>
             </div>
-            <div class="column"><center>
-                <aside>
+            <div>
+                <figure>
+                    <img src="assets\Star.png" alt="star"/>
+                </figure>
+            </div>
+                <div class="feature-image">
                     <figure>
                         <img src="assets\our-story.jpg" alt=""/>
                         <figcaption>Our restaurant.</figcaption>
                     </figure>
-                </aside></center>
-            </div>
+                </div>
     </body>
     <br>
     <br>
     <br>
     <footer>
+        <a href="About Us">About Us</a>
+        <br>
+        <button class="contact-us-cta">Contact us</button>
         <p>Copyright J. Cruz 2022 | Designed by Instruction by me. </p>
     </footer>
 </body>
